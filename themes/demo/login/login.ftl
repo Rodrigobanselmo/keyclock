@@ -7,11 +7,11 @@
       <div id="kc-form-wrapper" <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
         <#if realm.password>
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
-                <div class="${properties.kcFormGroupClass!}">
+                <div class="${properties.kcFormGroupClass!} username_input">
                     <#if usernameEditDisabled??>
-                        <input placeholder='Login' tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
+                        <input placeholder='Login' tabindex="1" id="username" class="${properties.kcInputClass!} username_input" name="username" value="${(login.username!'')}" type="text" disabled />
                     <#else>
-                        <input placeholder='Login' tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />
+                        <input placeholder='Login' tabindex="1" id="username" class="${properties.kcInputClass!} username_input" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" />
                     </#if>
                 </div>
 
