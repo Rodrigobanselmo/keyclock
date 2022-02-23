@@ -1,10 +1,10 @@
 :root {
   --textColor: #f6f5f7;
   --textOffColor: #7c858d;
-  --baseColor: #23333f;
+  --baseColor: #576af7;
   --baseDarkColor: #1e2b36;
   --baseLightColor: #283b48;
-  --secColor: #11f7e2;
+  --secColor: blue;
 }
 
 body {
@@ -14,12 +14,13 @@ body {
 }
 
 /* Login Card */
+.kc-logo-text {
+  display: none;
+}
 
 .login-pf-page .card-pf {
   border-radius: 20px;
-  background: var(--baseColor);
-  box-shadow: 15px 15px 30px var(--baseDarkColor),
-    -15px -15px 30px var(--baseLightColor);
+  background: red;
 }
 
 /* Card Title */
@@ -49,8 +50,7 @@ body {
 
   border-radius: 32px;
   background: var(--baseColor);
-  box-shadow: inset 15px 15px 30px var(--baseDarkColor),
-    inset -15px -15px 30px var(--baseLightColor);
+  background: blue;
 }
 
 .login-pf-page .form-control::placeholder {
@@ -80,9 +80,7 @@ body {
   width: 60px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: -8px -4px 8px var(--baseLightColor),
-    8px 4px 12px var(--baseDarkColor), 4px 4px 4px var(--baseDarkColor) inset,
-    -4px -4px 4px var(--baseLightColor) inset;
+  background: purple;
 }
 
 #rememberMe {
@@ -96,8 +94,7 @@ body {
   border-radius: 15px;
   transform: translate3d(-75%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
-  box-shadow: -8px -4px 8px var(--baseLightColor),
-    8px 4px 12px var(--baseDarkColor);
+  background: yellow;
 }
 
 #rememberMe:checked ~ .dot {
@@ -129,12 +126,11 @@ body {
   color: var(--secColor);
 
   border-radius: 32px;
-  background: linear-gradient(145deg, #253743, #202e39);
-  box-shadow: 15px 15px 30px var(--baseDarkColor),
-    -15px -15px 30px var(--baseLightColor);
+  background: var(--baseColor);
+  background: white;
 }
 
 #kc-login:active:focus {
-  background: linear-gradient(145deg, #202e39, #253743) !important;
+  background-color: pink !important;
   outline: none;
 }
