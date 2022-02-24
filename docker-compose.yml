@@ -30,6 +30,6 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./themes/demo/:/opt/jboss/keycloak/themes/demo
+      - ./themes/marquinhos/:/opt/jboss/keycloak/themes/marquinhos
     depends_on:
       - postgres
